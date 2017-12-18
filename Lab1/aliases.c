@@ -19,7 +19,7 @@ void aliases(int fs, double A0, double f0, double phi0, double A1, double f1, do
 	k = 0;
 
 	/* ignorant easy solution */
-	while (k < n)
+	while (k < fs)
 	{
 		alpha = omega * k++;
 		sample0 = (int)(A0 * cos(alpha * f0 + phi0));

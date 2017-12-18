@@ -14,7 +14,9 @@ void mics(double A, double f, double phi, double x0, double x1, double x2, doubl
 	l0 = x0 - x2;
 	l1 = x1 - x2;
 	omega = pi2 * f * (1.0 / c);
+	/* */
 	(*py) =  A * (cos(omega * l0 + phi) + cos(omega * l1 + phi));
+	(*py) = A * cos(omega * 0.5 * (x1 + x0 + x2));
 }
 
 int main(int argc, char const *argv[])
