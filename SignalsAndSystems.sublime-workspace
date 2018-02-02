@@ -4,6 +4,38 @@
 		"selected_items":
 		[
 			[
+				"r",
+				"return"
+			],
+			[
+				"Ex",
+				"EXIT_FAILURE"
+			],
+			[
+				"lf",
+				"lfir"
+			],
+			[
+				"scan",
+				"scanf"
+			],
+			[
+				"EX",
+				"EXIT_FAILURE"
+			],
+			[
+				"prin",
+				"printf\tprintf …"
+			],
+			[
+				"pr",
+				"printf\tprintf …"
+			],
+			[
+				"seq",
+				"seq_t"
+			],
+			[
 				"newS",
 				"newsinusoids"
 			],
@@ -32,27 +64,63 @@
 	"buffers":
 	[
 		{
-			"file": "Lab1/mics.c",
+			"file": "Lab2/l2fir.c",
 			"settings":
 			{
-				"buffer_size": 795,
+				"buffer_size": 1653,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "Lab1/periodic.c",
+			"file": "Lab2/lfir2.c",
 			"settings":
 			{
-				"buffer_size": 844,
+				"buffer_size": 1380,
+				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "Lab1/car2pol.c",
+			"file": "Lab1/mics.c",
 			"settings":
 			{
-				"buffer_size": 482,
+				"buffer_size": 795,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Lab2/lnfir.c",
+			"settings":
+			{
+				"buffer_size": 1889,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Lab2/ilfir.c",
+			"settings":
+			{
+				"buffer_size": 1065,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Lab2/lfir.c",
+			"settings":
+			{
+				"buffer_size": 1471,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Lab2/Makefile",
+			"settings":
+			{
+				"buffer_size": 221,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -82,12 +150,16 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 0.0,
-		"last_filter": "",
+		"height": 392.0,
+		"last_filter": "c++",
 		"selected_items":
 		[
+			[
+				"c++",
+				"Set Syntax: C++"
+			]
 		],
-		"width": 0.0
+		"width": 751.0
 	},
 	"console":
 	{
@@ -108,22 +180,26 @@
 	"expanded_folders":
 	[
 		"/D/Repositories/SignalsAndSystems",
-		"/D/Repositories/SignalsAndSystems/Lab1"
+		"/D/Repositories/SignalsAndSystems/Lab1",
+		"/D/Repositories/SignalsAndSystems/Lab2",
+		"/D/Repositories/SignalsAndSystems/Lab3"
 	],
 	"file_history":
 	[
+		"/D/Online/Dropbox/Studie/Signals and Systems/Practicals/Lab2/inverses.c",
+		"/D/Repositories/SignalsAndSystems/Lab1/mics.c",
+		"/D/Repositories/SignalsAndSystems/Lab1/car2pol.c",
+		"/D/Repositories/SignalsAndSystems/Lab2/lfir.c",
 		"/D/Repositories/SignalsAndSystems/Lab1/periodic.c",
 		"/D/Repositories/SignalsAndSystems/Lab1/unisoidadd.c",
 		"/D/Repositories/SignalsAndSystems/Lab1/aliases.c",
 		"/D/Repositories/SignalsAndSystems/Lab1/sum2mul.c",
-		"/D/Repositories/SignalsAndSystems/Lab1/car2pol.c",
 		"/D/Repositories/SignalsAndSystems/Lab1/make.bat",
 		"/D/Repositories/SignalsAndSystems/Lab1/Makefile",
 		"/D/Repositories/SignalsAndSystems/Lab1/pol2car.c",
 		"/D/Repositories/SignalsAndSystems/Lab1/addoids.c",
 		"/D/Repositories/SignalsAndSystems/Lab1/unisoid.c",
 		"/D/Online/Dropbox/Studie/Signals and Systems/Practicals/Lab1/templateSS.c",
-		"/D/Repositories/SignalsAndSystems/Lab1/mics.c",
 		"/D/Repositories/SignalsAndSystems/Lab1/sumsin.c",
 		"/D/Repositories/CompilerAndConstructions/Lab2/Ex5/Makefile",
 		"/D/Repositories/CompilerAndConstructions/Lab2/Ex6/Makefile",
@@ -136,7 +212,7 @@
 	],
 	"find":
 	{
-		"height": 0.0
+		"height": 23.0
 	},
 	"find_in_files":
 	{
@@ -150,6 +226,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			".n"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -157,6 +234,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			".N"
 		],
 		"reverse": false,
 		"show_context": true,
@@ -167,24 +245,53 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "Lab1/mics.c",
+					"file": "Lab2/l2fir.c",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 795,
+						"buffer_size": 1653,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								795,
-								795
+								1325,
+								1325
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C Improved/C Improved.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 161.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "Lab2/lfir2.c",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1380,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								541,
+								541
 							]
 						],
 						"settings":
@@ -200,20 +307,20 @@
 					"type": "text"
 				},
 				{
-					"buffer": 1,
-					"file": "Lab1/periodic.c",
+					"buffer": 2,
+					"file": "Lab1/mics.c",
 					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 844,
+						"buffer_size": 795,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								364,
+								364
 							]
 						],
 						"settings":
@@ -229,20 +336,49 @@
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "Lab1/car2pol.c",
+					"buffer": 3,
+					"file": "Lab2/lnfir.c",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 482,
+						"buffer_size": 1889,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								424,
-								396
+								1325,
+								1325
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 291.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "Lab2/ilfir.c",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1065,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								820,
+								820
 							]
 						],
 						"settings":
@@ -254,11 +390,68 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 5,
+					"file": "Lab2/lfir.c",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1471,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								779,
+								779
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C Improved/C Improved.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 39.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "Lab2/Makefile",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 221,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								13,
+								13
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Makefile Plus/makefile-plus.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
 					"file": "Lab1/Makefile",
 					"semi_transient": false,
 					"settings":
@@ -282,11 +475,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 8,
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 8,
 					"semi_transient": false,
 					"settings":
 					{
@@ -297,8 +490,8 @@
 						"selection":
 						[
 							[
-								0,
-								784
+								293,
+								305
 							]
 						],
 						"settings":
@@ -310,7 +503,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 5,
 					"type": "text"
 				}
 			]
@@ -318,7 +511,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 0.0
+		"height": 22.0
 	},
 	"input":
 	{
@@ -359,7 +552,7 @@
 	"project": "SignalsAndSystems.sublime-project",
 	"replace":
 	{
-		"height": 0.0
+		"height": 72.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -397,7 +590,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 332.0,
+	"side_bar_width": 293.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

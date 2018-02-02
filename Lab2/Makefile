@@ -1,4 +1,4 @@
-NAME ?= mics
+NAME ?= lnfir
 CXX ?= g++
 COMPILE_FLAGS = -lfl -std=c++98 -pedantic -Wall -Wextra -g -lm
 

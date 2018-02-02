@@ -31,10 +31,9 @@ void printseq(const seq_t seq)
 	printf("]\n");
 }
 
-/* assignment */
-void lfilter(const seq_t h, const seq_t x, seq_t* py)
+void lfir(const seq_t h, const seq_t x, seq_t* py)
 {
-	int k, n, v;
+	int k, n, v, q;
 	seq_t y;
 	
 	if(!py) { exit(EXIT_FAILURE); }
@@ -43,14 +42,15 @@ void lfilter(const seq_t h, const seq_t x, seq_t* py)
 	y.N = h.N - 1 + x.N;
 	y.d = (int*) malloc(y.N * sizeof(int));
 	if(!y.d) { exit(EXIT_FAILURE); }
-	/* convolute what is left into y[] */
+	/* convolute what is left into y[] ignorant approach */
 	for (n = 0; n < y.N; ++n)
 	{
 		v = 0;
 		for (k = 0; k < h.N; ++k)
 		{
-			if( k > n || n - k >= x.N) { continue; }
-			v += h.d[k] * x.d[n-k];
+			q = n - k;
+			if( q < 0 || q >= x.N) { continue; }
+			v += h.d[k] * x.d[q];
 		}
 		y.d[n] = v;
 	}
@@ -58,17 +58,38 @@ void lfilter(const seq_t h, const seq_t x, seq_t* py)
 	(*py) = y;
 }
 
+/* assignment */
+void lnfir(const seq_t* hs, int M, const seq_t x, seq_t* py)
+{
+	int m;
+	seq_t z, h;
+
+	if(!M || !hs) { exit(EXIT_FAILURE); }
+	
+	h = hs[0];
+
+	for (m = 1; m < M; ++m)
+	{
+		lfir(h, hs[m], &z);
+		free(h.d);
+		h = z;
+	}
+	lfir(h, x, py);
+}
+
 int main()
 {
-	int nscan;
-	seq_t h, x, y;
+	int nscan, M, m;
+	seq_t *hs, x, y;
 
-	nscan = scanseq(&h);
-	nscan += scanseq(&x);
-	if(nscan != 2) { exit(EXIT_SUCCESS); }
-	lfilter(h, x, &y);
+	if(!scanf("%d",&M)) { exit(EXIT_FAILURE); }
+	hs = (seq_t*) malloc(M * sizeof(seq_t));
+	if(!hs) { exit(EXIT_FAILURE); }
+	for (m = 0; m < M && scanseq(&hs[m]); ++m) { /* do nothing */ }
+	if(M != m || !scanseq(&x)) { exit(EXIT_SUCCESS); }
+	lnfir(hs, M, x, &y);
 	printseq(y);
 
-	free(h.d); free(x.d); free(y.d);
+	while(--M) { free(hs[M].d); } free(x.d); free(y.d);
 	return EXIT_SUCCESS;
 }
